@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="Contas.ContaCorrente"/>
+    <fullyQualifiedTypeName name="Contas.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="Funcionarios.ControleBonificacao"/>
+    <fullyQualifiedTypeName name="Funcionarios.Gerente"/>
+    <fullyQualifiedTypeName name="Sistema.Autenticavel"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="Funcionarios.Administrador"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,33 @@
+package Funcionarios;
+
+public class Gerente extends Funcionario{
+	
+	//atributos
+	private String senha;
+	
+	//metodos
+	public boolean autentica(String senha) {
+		if(this.senha == senha) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	@Override
+	public double getBonificacao() {
+		return 2000 + super.getSalario() * 0.2;
+	}
+	
+	
+	
+	
+}

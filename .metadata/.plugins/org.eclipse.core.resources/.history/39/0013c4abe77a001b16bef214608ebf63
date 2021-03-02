@@ -1,0 +1,6 @@
+package Sistema;
+
+public interface Auntenticavel {
+
+	public boolean  autenticaa();
+}

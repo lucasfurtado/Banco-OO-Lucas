@@ -1,0 +1,13 @@
+package Funcionarios;
+
+public class Administrador extends Funcionario {
+
+	private String senha;
+
+	@Override
+	public double getBonificacao() {
+		return 500;
+	}
+	
+	
+}

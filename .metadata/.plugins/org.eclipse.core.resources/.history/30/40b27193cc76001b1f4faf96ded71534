@@ -1,0 +1,68 @@
+package Contas;
+
+public class Conta {
+	
+	//atributos
+	private double saldo;
+	private int agencia;
+	private int numero;
+	private String titular;
+	
+	private static int numeroDeContas = 0;							//armazena quantas contas existem
+	
+	//construtor
+	public Conta(double saldo, int agencia, int numero, String titular) {
+		this.saldo = saldo;
+		this.agencia = agencia;
+		this.numero = numero;
+		this.titular = titular;
+		Conta.numeroDeContas++;										//referenciando a variável estática
+	}
+	
+	//métodos
+	public void deposita(double valor) {
+		this.saldo += valor;										//é igual a ' this.saldo = this.saldo + valor '  -> somador
+		System.out.println("deposito feito com sucesso");
+	}
+	
+	public void saca(double valor) {
+		if(valor > this.saldo) {
+			System.out.println("Você não tem saldo suficiente");
+		}else {
+			this.saldo -= valor;									// é igual a ' this.saldo = this.saldo - valor '
+			System.out.println("saque feito com sucesso");
+		}
+	}
+	
+	public void tranfere(Conta contaDestino, double valor) {
+		if(valor > this.saldo){
+			System.out.println("Você não tem saldo suficiente");
+		}else {
+			this.saldo -= valor;
+			contaDestino.deposita(valor);
+		}
+	}
+	
+	//gets
+	public double getSaldo() {
+		return this.saldo;
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public String getTitular() {
+		return titular;
+	}
+	
+	public static int getNumeroDeContas() {						//método estático para retornar variável estática
+		return Conta.numeroDeContas;
+	}
+
+}

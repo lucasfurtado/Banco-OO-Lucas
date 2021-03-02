@@ -1,0 +1,15 @@
+package Funcionarios;
+
+public class TesteFuncionarios {
+
+	public static void main(String[] args) {
+		
+		Gerente gerente1 = new Gerente();
+		gerente1.setNome("Carlos");
+		gerente1.setCpf(11111111-11);
+		gerente1.setSalario(5000.00);
+		
+		System.out.println(gerente1.getBonificacao());
+	}
+
+}

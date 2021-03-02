@@ -1,0 +1,15 @@
+package Contas;
+
+public class ContaCorrente extends Conta{
+
+	public ContaCorrente(double saldo, int agencia, int numero, String titular) {
+		super(saldo, agencia, numero, titular);
+	}
+
+	@Override
+	public void saca(double valor) {
+		double valorComTaxa= valor + 0.5;
+		super.saca(valorComTaxa);
+	}
+	
+}

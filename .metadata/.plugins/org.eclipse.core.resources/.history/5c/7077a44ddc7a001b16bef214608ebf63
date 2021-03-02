@@ -1,0 +1,23 @@
+package Contas;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		
+		ContaCorrente cc = new ContaCorrente(1000, 10, 20, "Lucas");
+		cc.deposita(250.50);
+		
+		ContaPoupanca cp = new ContaPoupanca(2000, 10, 30, "José");
+		cp.deposita(500.10);
+		
+		System.out.println(Conta.getNumeroDeContas());
+		
+		cp.tranfere(cc, 500);
+		
+		System.out.println(cp.getSaldo());
+		
+		System.out.println("CC: "+ cc.getSaldo());
+		cc.saca(250.00);
+		System.out.println("CC: "+ cc.getSaldo());
+	}
+}

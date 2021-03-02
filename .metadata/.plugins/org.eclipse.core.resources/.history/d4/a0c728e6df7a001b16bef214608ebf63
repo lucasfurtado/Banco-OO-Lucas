@@ -1,0 +1,16 @@
+package Sistema;
+
+import Funcionarios.Gerente;
+
+//sistema dedicado aos clientes e alguns profissionais autenticados para ter acesso ao sistema
+public class Sistema {
+
+	private boolean entrouNoSistema(Gerente gerente, String senha) {
+		if(gerente.getSenha() == senha) {
+			System.out.println("Bem vindo ao sistema!");
+		}else {
+			System.out.println("Acesso não permitido");
+		}
+	}
+	
+}

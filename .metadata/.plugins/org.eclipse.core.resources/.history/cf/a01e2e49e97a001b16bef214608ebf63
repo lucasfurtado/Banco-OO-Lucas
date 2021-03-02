@@ -1,0 +1,22 @@
+package Sistema;
+
+import Funcionarios.Administrador;
+import Funcionarios.Gerente;
+
+public class TesteSistema {
+
+	public static void main(String[] args) {
+		
+		SistemaInterno sistema = new SistemaInterno();
+		
+		Gerente g1 = new Gerente();
+		g1.setSenha("1234");
+		
+		Administrador adm1 = new Administrador();
+		adm1.setSenha("admin123");
+		
+		sistema.entrouNoSistema(g1, "1234");
+		
+	}
+
+}

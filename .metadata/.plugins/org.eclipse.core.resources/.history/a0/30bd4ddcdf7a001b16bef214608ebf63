@@ -1,0 +1,12 @@
+package Sistema;
+
+import Funcionarios.Gerente;
+
+//sistema dedicado aos clientes e alguns profissionais autenticados para ter acesso ao sistema
+public class Sistema {
+
+	private boolean entrouNoSistema(Gerente gerente, int senha) {
+		if(gerente.)
+	}
+	
+}
